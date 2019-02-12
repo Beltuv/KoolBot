@@ -55,5 +55,5 @@ async def on_message(message):
         await client.send_message(message.channel,'That will always be a mystery...')
     if message.content == '!BeltuvIsBad':
         await client.send_message(message.channel,'I will have to alert you to the authorities.')
-client.run('NTQ0NzI0MzgzNjcxNzc5MzU4.D0RSfw.ho4ejt7rc-AxiyfpxVLOXsx9dHY')
+client.run(str(os.environ.get('BOT_TOKEN')))
 
