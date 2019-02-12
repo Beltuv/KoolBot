@@ -1,0 +1,2 @@
+# KoolBot
+Just Kool Bot
