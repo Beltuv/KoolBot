@@ -31,21 +31,34 @@ async def on_message(message):
         await client.send_message(message.channel,'Go the #rules-and-information channel and read it.')
     if message.content == '!BeltuvIsGreat':
         await client.send_message(message.channel,'Of course he is!')
+    if message.content == '!beltuvisgreat':
+        await client.send_message(message.channel,'Of course he is!')
     if message.content == '!WhoIsBeltuv':
+        await client.send_message(message.channel,'Maybe you should learn. You are in his server.')
+    if message.content == '!whoisbeltuv':
         await client.send_message(message.channel,'Maybe you should learn. You are in his server.')
     if message.content == '!KoolBot':
         await client.send_message(message.channel,'Yeah, that is me.')
+     if message.content == '!koolbot':
+        await client.send_message(message.channel,'Yeah, that is me.')
     if message.content.startswith('!FavouriteFood'):
+        randomlist = ["It is obviously pizza!","Hotdogs can never be beaten!","Toothbrush, I love eating those brushs!","Chocolate.","Does juice count?","Cheeseburgers are dreams that came true!!!","Beltuv.","Just my saliva."]
+        await client.send_message(message.channel,(random.choice(randomlist)))
+    if message.content.startswith('!favouritefood'):
         randomlist = ["It is obviously pizza!","Hotdogs can never be beaten!","Toothbrush, I love eating those brushs!","Chocolate.","Does juice count?","Cheeseburgers are dreams that came true!!!","Beltuv.","Just my saliva."]
         await client.send_message(message.channel,(random.choice(randomlist)))
     if message.content.startswith('!icosahedron'):
         randomlist = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20"]
         await client.send_message(message.channel,(random.choice(randomlist)))
+    if message.content == '!icosahedron ':
+        await client.send_message(message.channel,'7')
     if message.content == '!KoolBotVersion':
         await client.send_message(message.channel,'0.2.2')
     if message.content == '!ServerVersion':
         await client.send_message(message.channel,'0.2.4')
     if message.content == '!IsThisACommand':
+        await client.send_message(message.channel,'Yes, it is.')
+    if message.content == '!isthisacommand':
         await client.send_message(message.channel,'Yes, it is.')
     if message.content == '!pizza':
         em = discord.Embed(description='Amazing. Right?')
@@ -54,6 +67,8 @@ async def on_message(message):
     if message.content == '!unknown':
         await client.send_message(message.channel,'That will always be a mystery...')
     if message.content == '!BeltuvIsBad':
+        await client.send_message(message.channel,'I will have to alert you to the authorities.')
+    if message.content == '!beltuvisbad':
         await client.send_message(message.channel,'I will have to alert you to the authorities.')
 client.run(str(os.environ.get('BOT_TOKEN')))
 
